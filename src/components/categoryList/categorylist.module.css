@@ -28,11 +28,11 @@
 }
 
 .category.fashion {
-  background-color: #edbfb7;
+  background-color: #006e90;
 }
 
 .category.food {
-  background-color: #b5bfa1;
+  background-color: #3f5e5a;
 }
 
 .category.travel {
@@ -40,13 +40,37 @@
 }
 
 .category.culture {
-  background-color: #ad9baa;
+  background-color: #fe938c;
 }
 
 .category.coding {
-  background-color: #fe938c;
+  background-color: #d56062;
 }
 
 .image {
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1280px) {
+  .category {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .category {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .category {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .category {
+    width: 100%;
+  }
 }
