@@ -1,6 +1,7 @@
 .container {
   display: flex;
   justify-content: space-between;
+  align-content: center;
   margin-top: 50px;
   padding: 20px 0;
   color: var(--softTextColor);
@@ -49,4 +50,28 @@
 
 .listTitle {
   font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .links {
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .links {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .links {
+    font-size: 14px;
+  }
 }
